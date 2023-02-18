@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witcher</title>
+    <style>
+        .accent {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    
+    const mainPerson = "Geralt";
+    const mainProfession = "Witcher";
+    const cities = ["Novigrad", "Oxenfurt", "Vizima", "Blaviken", "Rinde"];
+    const monsters = ["dragon", "Werewolves", "Drowners", "Striga", "Griffins"];
+
+    const countCities = cities.length; 
+    const listOfCitiesWithComa = cities.join(", "); 
+    
+
+    const relations = {
+        stepDaughter: "Ciri",
+        oneLove: "Yennefer"
+    };
+
+
+    document.body.innerHTML = `
+    <p>The main character of the series is <span class="accent">${mainPerson} of Rivia</span>, a <span class="accent">${mainProfession}</span> who is a hunter of monsters that pose a threat to human life. As a child, he, like other witches, was given high fighting qualities with the help of mutations: great strength, lightning reaction, accelerated metabolism and high regenerative capacity.</p>
+    <p><span class="accent">${mainPerson} of Rivia</span>, the ${mainProfession}, travels to many cities and towns, there are ${countCities} of the most notable ones: ${listOfCitiesWithComa}.</p>
+    <p><span class="accent">${mainPerson} of Rivia</span>, the ${mainProfession}, is a monster hunter by profession, so he fights a wide variety of monster. ${mainPerson} and his companions encounter a ${monsters[0]} named Villentretenmerth. The ${monsters[0]} is not hostile, but ${mainPerson} has fought dragons before in his career as a ${mainProfession}. ${monsters[1]} are a common enemy in the ${mainProfession} universe. ${monsters[2]} are aquatic monsters that are known for dragging people underwater and drowning them. ${mainPerson} fights a group of ${monsters[2]} in the city of ${cities[0]}. ${monsters[3]} are cursed princesses who transform into monstrous creatures at night. ${monsters[4]} are powerful, territorial creatures that are known for attacking livestock and travelers.</p>
+    <p>${mainPerson} of Rivia tries to protect the young queen of the ruined kingdom of Cintra ${relations.stepDaughter}, who was destined for him by a prophecy even before her birth.</p>
+    <p>When ${mainPerson} first meets ${relations.stepDaughter}, she is a young princess who is being pursued by dangerous forces who want to use her for their own purposes. ${mainPerson} recognizes her potential as a ${mainProfession} and takes her under his protection, teaching ${relations.stepDaughter} how to fight, survive, and navigate the dangerous world they inhabit.</p>
+    <p>${mainPerson} and ${relations.oneLove} first meet when ${relations.oneLove} is summoned to Skellige to help with a crisis. ${mainPerson} is immediately attracted to ${relations.oneLove}, and the two begin a passionate but complicated affair.</p>
+    <p>${mainPerson} and ${relations.oneLove} share a deep connection, and they are able to work together to achieve their goals. ${mainPerson} respects Yennefer's power and intelligence, and he values her advice and insight. ${relations.oneLove}, in turn, cares for ${mainPerson} and is willing to go to great lengths to protect him and his people.</p>
+    `;
+</script>
+</body>
+</html>
